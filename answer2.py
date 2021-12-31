@@ -6,17 +6,19 @@ for x in range(t):
     d = input()
     b = d.split()
     arr.append(b)
-    y = int(x)
-    if x != y :
+
+
+
+for x in range(t):
+    n = int(arr[x][0])
+    s = int(arr[x][1])
+    a = int(arr[x][2])
+
+    x = (s-(a*(1-n))) / n
+    result = x-a
+    tt = int(result)
+    if result > 0 and tt == result :
+        print(int(result))
+    else :
         print("-1")
-    else:
-        qq = (n*x)
-        tt = s+(a*(n-1))
-        if qq != tt :
-            print("-1")
-        else:
-            result = x-a
-            if result == 0 :
-                print("-1")
-            else:
-                print(int(result))
+
